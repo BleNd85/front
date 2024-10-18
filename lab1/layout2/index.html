@@ -2,9 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Table layout</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #000;
+            vertical-align: top;
+            padding: 10px;
+        }
+
+        .logo, .input {
+            width: 50%;
+        }
+
+        .section {
+            width: 25%;
+            text-align: center;
+        }
+
+        .sidebar-left {
+            width: 20%;
+        }
+
+        .main-content {
+            width: 60%;
+        }
+
+        .trends {
+            width: 20%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+    </style>
 </head>
 <body>
+<table>
+    <!-- Рядок з логотипом та полем вводу -->
+    <tr>
+        <td class="logo" colspan="2">Logo</td>
+        <td class="input" colspan="2">
+            <input type="text" placeholder="Input..."/>
+        </td>
+    </tr>
 
+    <!-- Рядок з секціями -->
+    <tr>
+        <td class="section"><a href="#">Section 1</a></td>
+        <td class="section"><a href="#">Section 2</a></td>
+        <td class="section"><a href="#">Section 3</a></td>
+        <td class="section"><a href="#">Section 4</a></td>
+    </tr>
+
+    <!-- Основний контент: бічна панель, головний контент і тренди -->
+    <tr>
+        <td class="sidebar_left" rowspan="4">
+            <ul>
+                <li>Home</li>
+                <li>Explore</li>
+                <li>Notifications</li>
+                <li>AI</li>
+                <li>Section 5</li>
+                <li>Section 6</li>
+                <li>Section 7</li>
+                <li>...</li>
+            </ul>
+        </td>
+        <td class="main_content" colspan="2" rowspan="4">
+            <img src="" alt="main_image" style="width: 100%;"/>
+            <h1>Main content</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </td>
+        <td class="trends" rowspan="4">
+            <ul>
+                <li>Trend 1</li>
+                <li>Trend 2</li>
+                <li>Trend 3</li>
+                <li>Trend 4</li>
+            </ul>
+        </td>
+    </tr>
+</table>
 </body>
 </html>

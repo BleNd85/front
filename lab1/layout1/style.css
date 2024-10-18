@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2rem 1rem;
+}
+
+
+td {
+    vertical-align: top;
+}
+
+.td-outline {
+    border: 1px solid #000;
+}
+
+.tr-outline {
+    outline: 1px solid #000;
+}
+
+.logo, .input {
+    width: 50%;
+}
+
+.logo-img {
+    width: 100px;
+    height: 75px;
+    padding-left: 1rem;
+}
+
+.section {
+    width: 10%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sidebar-left {
+    width: 20%;
+}
+
+.main-content {
+    width: 60%;
+}
+
+.trends {
+    width: 20%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 1rem 1rem;
+    font-size: 20px;
+}
+
+.input {
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    border: none;
+    width: 50%;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.input-cell {
+    text-align: right;
+    align-content: center;
+    padding-right: 2rem;
+}
+
+.input:focus {
+    box-shadow: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.section-right {
+    padding: 5rem;
+}
+
+.t-rounded {
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.image {
+    border-radius: 2rem 2rem 0 0;
+    width: 100%;
+    height: 50%;
+
+}
+
+.content {
+    padding: 0.3rem;
+    margin: 0.7rem
+}
+
+/*.section::before {
+    height: 1em;
+    display: table-row;
+    content: '';
+}*/
+
