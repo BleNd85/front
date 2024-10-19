@@ -30,10 +30,6 @@ td {
     outline: 1px solid #000;
 }
 
-.logo, .input {
-    width: 50%;
-}
-
 .logo-img {
     width: 100px;
     height: 75px;

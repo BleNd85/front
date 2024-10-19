@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.logo-img {
+    width: 100px;
+    height: 75px;
+    border-radius: 2rem 2rem;
+}
+
+.header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1rem solid #000000;
+    margin: 1rem;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+    height: 100%;
+    overflow: auto;
+
+}
+
+.input {
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    border: none;
+    width: 60%;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.input:focus {
+    box-shadow: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.button-header {
+    border-radius: 2rem 2rem;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+    height: 3rem;
+    width: 6rem;
+    border: none;
+    background-color: white;
+}
+
+.button-header:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-left {
+    padding: 1rem;
+    margin: 1rem;
+    border: 0.1rem solid #000;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    width: 15%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.gallery-item {
+    margin: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    width: 20%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.gallery-item-img {
+    border-radius: 2rem 2rem 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item-text {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+.gallery-item-body{
+    display: flex;
+    align-content: space-between;
+}
+.gallery-item-text{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+}
