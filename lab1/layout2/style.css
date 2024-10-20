@@ -8,7 +8,7 @@
 
 .container {
     display: flex;
-    height: 100%;
+    flex-direction: row;
 }
 
 .logo-img {
@@ -25,10 +25,10 @@
     justify-content: space-between;
     align-items: center;
     border: 0.1rem solid #000000;
-    margin: 1rem;
     box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
     height: 100%;
     overflow: auto;
+    margin: 1rem 1rem 0;
 
 }
 
@@ -36,7 +36,7 @@
     box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
     border: none;
-    width: 60%;
+    width: 65%;
     height: 3rem;
     padding: 0.5rem;
 }
@@ -66,23 +66,21 @@
     border: 0.1rem solid #000;
     box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
-    width: 15%;
+    width: 20%;
 }
 
 .gallery {
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
-    width: 75%;
+    flex-direction: row;
+    width: 100%;
 }
 
 .gallery-item {
-    margin: 1rem;
-    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
-    border-radius: 2rem;
     width: 20%;
-    text-align: center;
-    background-color: #fff;
+    margin: 1rem;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
 }
 
 .gallery-item-img {
@@ -92,16 +90,55 @@
 }
 
 .gallery-item-text {
-    padding: 0.5rem;
+    padding: 0.7rem 0 0.7rem 0.7rem;
     font-size: 1rem;
     color: #333;
-}
-.gallery-item-body{
-    display: flex;
-    align-content: space-between;
-}
-.gallery-item-text{
     flex-wrap: wrap;
     display: flex;
     align-items: flex-start;
+}
+
+.gallery-item-body {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 40%;
+    }
+}
+
+.button-body {
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 0.7rem;
+    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.button-body:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-text {
+    padding: 0.3rem;
+    margin: 0.7rem
+}
+
+a, li, ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    color: black;
+}
+li{
+    margin: 1rem 0;
 }
