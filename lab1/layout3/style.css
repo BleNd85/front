@@ -51,6 +51,7 @@ body {
 }
 
 .heading {
+    overflow: auto;
     margin: 1rem;
 
     h3 {
@@ -84,6 +85,7 @@ body {
 }
 
 .main-section {
+    overflow: auto;
     margin: 2rem 1rem;
     display: grid;
     grid-template-rows: 9fr 1fr;
@@ -127,6 +129,7 @@ body {
 }
 
 .guide-section {
+    overflow: auto;
     display: grid;
     grid-template-rows: 1fr 4fr 2fr;
     justify-items: center;

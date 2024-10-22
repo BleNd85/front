@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+
+.header {
+    background: #ded6ce;
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+body {
+    background: #f8edeb;
+    max-width: 1536px;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section {
+    box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.logo-img {
+    float: initial;
+    width: 100px;
+    height: 75px;
+    border-radius: 5rem 5rem;
+    box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+
+}
+
+.main-section {
+    float: left;
+    width: 75%;
+    border-right: #9a9a9a groove 1px;
+}
+
+.right-panel {
+    float: right;
+    width: 25%;
+    padding: 2rem;
+}
+
+.image {
+    float: left;
+    width: 40%;
+    height: auto;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.article-text {
+    padding: 0.5rem;
+    float: right;
+    width: 55%;
+}
+
+.article {
+    overflow: hidden;
+    padding: 2rem;
+}
+
+
+.heading {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.date {
+    font-family: Courier New, monospace;
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.panel-item {
+    margin-bottom: 3rem;
+}
+
+.panel-h3 {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.panel-text {
+    font-size: 18px;
+
+}
