@@ -134,7 +134,6 @@ body {
     grid-template-rows: 1fr 4fr 2fr;
     justify-items: center;
     padding: 2rem 1rem;
-    height: 90vh;
     grid-row-gap: 5%;
 }
 
@@ -180,7 +179,6 @@ body {
     grid-template-columns: 5fr 10fr 5fr;
     background: #fff5ed;
     padding: 2rem;
-    height: 15vh;
     box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
