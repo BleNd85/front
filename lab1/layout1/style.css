@@ -2,15 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Google Sans", Roboto, Arial, sans-serif;
-    font-weight: 500;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 body {
+    background: #f8edeb;
     max-width: 1920px;
     margin: 0 auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -28,17 +29,19 @@ td {
 }
 
 .td-outline {
-    border: 1px solid #000;
+    /* border: 1px solid #000;*/
 }
 
 .tr-outline {
-    outline: 1px solid #000;
+    /* outline: 1px solid #000;*/
 }
 
 .logo-img {
+    border-radius: 0.2rem;
     width: 100px;
     height: 75px;
-    padding-left: 1rem;
+    margin: 0.3rem 0 0.1rem 0.5rem;
+    box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
 .section {
@@ -66,12 +69,11 @@ ul {
 
 li {
     margin: 1rem 1rem;
-    font-size: 20px;
 }
 
 .input {
-    box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
-    border-radius: 2rem;
+    box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.2rem;
     border: none;
     width: 50%;
     height: 3rem;
@@ -85,7 +87,7 @@ li {
 }
 
 .input:focus {
-    box-shadow: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
     outline: none;
 }
 
@@ -94,18 +96,18 @@ li {
 }
 
 .t-rounded {
-    border-radius: 2rem;
-    box-shadow: 0.2rem 0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .image {
-    border-radius: 2rem 2rem 0 0;
+    border-radius: 0.2rem 0.2rem 0 0;
     width: 100%;
     height: 50%;
 
