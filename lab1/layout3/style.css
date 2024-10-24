@@ -13,8 +13,8 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-strong{
- font-weight: 500;
+strong {
+    font-weight: 500;
 }
 
 .logo-img {
@@ -26,13 +26,14 @@ strong{
 
 .header {
     display: grid;
-    grid-template-columns: 18fr 1fr;
+    grid-template-columns: 10fr 1fr;
     background: #aec6cf;
     padding: 0.5rem 2rem;
 }
 
 .header-button {
     height: 70%;
+    width: 100%;
     align-self: center;
     cursor: pointer;
     border: none;
@@ -46,10 +47,10 @@ strong{
 }
 
 .heading-container {
+    align-items: center;
     background: #fff5ed;
     display: grid;
     grid-template-columns: 1fr  1fr;
-    grid-template-rows: auto 1fr;
     border: 0.15rem solid #ded6ce;
     border-radius: 0.2rem;
     box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
@@ -72,8 +73,12 @@ strong{
 }
 
 .heading-img {
-    width: 100%;
     box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
 }
 
 .heading-button {
@@ -92,11 +97,9 @@ strong{
 }
 
 .main-section {
-    margin: 2rem 1rem;
     display: grid;
     grid-template-rows: 9fr 1fr;
     justify-items: center;
-    grid-row-gap: 5%;
 }
 
 .card-section {
@@ -104,14 +107,14 @@ strong{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     grid-column-gap: 4rem;
-    margin: 2rem 10rem;
+    padding: 5% 7%;
+    height: 100%;
 }
 
 .main-card {
     border: 0.15rem solid #ded6ce;
     border-radius: 0.2rem;
     height: 100%;
-    width: auto;
     box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
     background: #fff5ed;
 
@@ -129,13 +132,13 @@ strong{
 
 .main-button {
     height: 5rem;
-    width: 30rem;
+    width: 25%;
     background: #fff5ed;
 }
 
 .guide-section {
     display: grid;
-    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-rows: 4fr 5fr 4fr;
     justify-items: center;
     padding: 2rem 1rem;
     grid-row-gap: 5%;
@@ -146,7 +149,6 @@ strong{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 4rem;
     grid-row-gap: 4rem;
-    margin: 0 10rem;
 }
 
 .guide-card {
@@ -187,23 +189,66 @@ strong{
 }
 
 .link-container {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     justify-items: center;
-    a{
+    grid-row-gap: 2%;
+    grid-column-gap: 2%;
+
+    a {
         text-decoration: none;
         color: black;
     }
 
 }
 
-/*
-@media (max-width:1850px) {
-    .heading-button {
-        width: 30%;
-        height: 10%;
-        margin-bottom: 2rem ;
-    }
-}*/
+@media (max-width: 1024px) {
 
+    .main-card {
+        width: 80%;
+    }
+
+    .card-section {
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 1.5rem;
+    }
+
+    .guide-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-section {
+        grid-template-rows: 6fr 0.5fr;
+        align-items: center;
+    }
+
+    .main-button {
+        width: 60%;
+    }
+
+    .guide-section {
+        grid-template-rows: 1fr 5fr 0.5fr;
+    }
+
+    .heading-button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 620px) {
+    .guide-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .guide-section {
+        grid-template-rows: 1fr 5fr 0.5fr;
+        grid-row-gap: 2%;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+}
