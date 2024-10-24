@@ -100,3 +100,25 @@ body::after {
     font-size: 18px;
 
 }
+
+@media (max-width: 900px) {
+    .right-panel {
+        float: none;
+        width: 100%;
+        border: #9a9a9a groove 1px;
+    }
+    .main-section {
+        float: none;
+        width: 100%;
+        border: #9a9a9a groove 1px;
+    }
+    .image {
+        float: none;
+        width: 100%;
+    }
+    .article-text {
+        float: none;
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
