@@ -1,0 +1,134 @@
+@box-shadow-light: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+@box-shadow-heavy: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@font-family-primary: "Google Sans", Roboto, Arial, sans-serif;
+@font-family-secondary: Courier New, monospace;
+@background-body: #f8edeb;
+@background-header: #ded6ce;
+@border-color: #9a9a9a;
+@font_family_1: "Google Sans", Roboto, Arial, sans-serif;
+@font_family_2: Courier New, monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: @font_family_1;
+  font-weight: 500;
+}
+
+.header {
+  background: @background-header;
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+
+body {
+  background: #f8edeb;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-shadow: @box-shadow-heavy;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.section {
+  box-shadow: @box-shadow-heavy;
+}
+
+.logo-img {
+  float: initial;
+  width: 100px;
+  height: 75px;
+  border-radius: 5rem 5rem;
+  box-shadow: @box-shadow-heavy;
+}
+
+.main-section {
+  float: left;
+  width: 75%;
+  border-right: @border-color groove 1px;
+}
+
+.right-panel {
+  float: right;
+  width: 25%;
+  padding: 2rem;
+}
+
+.image {
+  float: left;
+  width: 40%;
+  height: auto;
+  border-radius: 0.2rem;
+  box-shadow: @box-shadow-heavy;
+}
+
+.article-text {
+  padding: 0.5rem;
+  float: right;
+  width: 55%;
+}
+
+.article {
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.heading {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.date {
+  font-family: @font_family_2;
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.panel-item {
+  margin-bottom: 3rem;
+}
+
+.panel-h3 {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.panel-text {
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .right-panel {
+    float: none;
+    width: 100%;
+    border: @border-color groove 1px;
+  }
+
+  .main-section {
+    float: none;
+    width: 100%;
+    border: @border-color groove 1px;
+  }
+
+  .image {
+    float: none;
+    width: 100%;
+  }
+
+  .article-text {
+    float: none;
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
