@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "stylus": "^0.64.0",
+    "less": "^4.2.1",
+    "less-watch-compiler": "^1.16.3"
+  }
+}

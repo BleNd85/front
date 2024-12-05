@@ -97,6 +97,8 @@ strong {
 }
 
 .main-section {
+    overflow: auto;
+    margin: 2rem 1rem;
     display: grid;
     grid-template-rows: 9fr 1fr;
     justify-items: center;
