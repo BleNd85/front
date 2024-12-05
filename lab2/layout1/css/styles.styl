@@ -2,25 +2,19 @@ $border-radius-element = 0.2rem
 $border-radius-image = 0.2rem 0.2rem 0 0
 $font-body = ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"
 $box-shadow-element = 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2)
-$box-shadow-element-active = 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.2)
+$box-shadow-active = 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.2)
 
-box-shadow-element()
-  box-shadow $box-shadow-element
+shadow-element(shadow)
+  box-shadow shadow
 
-box-shadow-active()
-  box-shadow $box-shadow-element-active
+border-radius-element(radius)
+  border-radius radius
 
-border-radius-element()
-  border-radius $border-radius-element
-
-border-radius-image()
-  border-radius $border-radius-image
-
-font-family()
-  font-family $font-body
+font-family(value)
+  font-family value
 
 *
-  font-family()
+  font-family($font-body)
   padding 0
   margin 0
   box-sizing border-box
@@ -56,8 +50,8 @@ a
   font-size 20px
 
 .logo-img
-  border-radius-element()
-  shadow-element()
+  border-radius-element($border-radius-element)
+  shadow-element($box-shadow-element)
   width 100px
   height 75px
   margin 0.3rem 0 0.1rem 0.5rem
@@ -77,14 +71,14 @@ a
   width 20%
 
 .input
-  shadow-element()
+  shadow-element($box-shadow-element)
   border none
   width 50%
   height 3rem
   padding 0.5rem
 
   &:focus
-    shadow-active()
+    shadow-element($box-shadow-active)
     outline none
 
 .input-cell
@@ -97,11 +91,11 @@ a
   padding 5rem
 
 .t-rounded
-  border-radius-element()
-  shadow-element()
+  border-radius-element($border-radius-element)
+  shadow-element($box-shadow-element)
 
 .image
-  border-radius-image()
+  border-radius-image($border-radius-image)
   max-width 100%
   max-height 50%
 
