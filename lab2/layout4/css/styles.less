@@ -5,14 +5,16 @@
 @background-body: #f8edeb;
 @background-header: #ded6ce;
 @border-color: #9a9a9a;
-@font_family_1: "Google Sans", Roboto, Arial, sans-serif;
-@font_family_2: Courier New, monospace;
+
+.shadow-element(@shadow){
+  box-shadow: @shadow;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: @font_family_1;
+  font-family: @font-family-primary;
   font-weight: 500;
 }
 
@@ -20,13 +22,14 @@
   background: @background-header;
   padding: 0.5rem 2rem;
   text-align: center;
+  .shadow-element(@box-shadow-light);
 }
 
 body {
-  background: #f8edeb;
+  @background-body: #f8edeb;
   max-width: 1920px;
   margin: 0 auto;
-  box-shadow: @box-shadow-heavy;
+  .shadow-element(@box-shadow-heavy);
 
   &::after {
     content: "";
@@ -36,7 +39,7 @@ body {
 }
 
 .section {
-  box-shadow: @box-shadow-heavy;
+  .shadow-element(@box-shadow-light);
 }
 
 .logo-img {
@@ -44,7 +47,7 @@ body {
   width: 100px;
   height: 75px;
   border-radius: 5rem 5rem;
-  box-shadow: @box-shadow-heavy;
+  .shadow-element(@box-shadow-light);
 }
 
 .main-section {
@@ -64,7 +67,7 @@ body {
   width: 40%;
   height: auto;
   border-radius: 0.2rem;
-  box-shadow: @box-shadow-heavy;
+  .shadow-element(@box-shadow-light);
 }
 
 .article-text {
@@ -85,7 +88,7 @@ body {
 }
 
 .date {
-  font-family: @font_family_2;
+  font-family: @font-family-secondary;
   font-size: 15px;
   margin-bottom: 0.5rem;
 }

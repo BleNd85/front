@@ -3,7 +3,8 @@
 @shadow-light: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 @shadow-active: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.2);
 @shadow-heavy: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-@font-main: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+@font-main: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica,
+"Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 
 .shadow(@size) {
   box-shadow: @size;
@@ -98,7 +99,7 @@ img {
 }
 
 .footer {
-  display: flex;
+  .flex(row)
 }
 
 .main-card {
@@ -212,7 +213,6 @@ img {
   .email-input {
     width: 70%;
   }
-
 }
 
 @media (max-width: 500px) {

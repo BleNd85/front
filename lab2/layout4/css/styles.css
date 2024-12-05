@@ -9,9 +9,9 @@
   background: #ded6ce;
   padding: 0.5rem 2rem;
   text-align: center;
+  box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 body {
-  background: #f8edeb;
   max-width: 1920px;
   margin: 0 auto;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -22,14 +22,14 @@ body::after {
   clear: both;
 }
 .section {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 .logo-img {
   float: initial;
   width: 100px;
   height: 75px;
   border-radius: 5rem 5rem;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 .main-section {
   float: left;
@@ -46,7 +46,7 @@ body::after {
   width: 40%;
   height: auto;
   border-radius: 0.2rem;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 .article-text {
   padding: 0.5rem;
